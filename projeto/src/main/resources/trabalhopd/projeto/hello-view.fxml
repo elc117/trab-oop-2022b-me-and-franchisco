@@ -3,10 +3,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalhopd.projeto.HelloController" >
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalhopd.projeto.HelloController">
    <children>
-      <Button onAction="#vai" layoutX="219.0" layoutY="76.0" mnemonicParsing="false" text="Button" />
-      <TextField fx:id="txt1" layoutX="53.0" layoutY="76.0" />
+      <Button layoutX="53.0" layoutY="211.0" mnemonicParsing="false" onAction="#catchInfos" text="Button" />
+      <TextField fx:id="nome" layoutX="53.0" layoutY="76.0" />
+      <Label layoutX="53.0" layoutY="59.0" text="Nome" />
+      <TextField  fx:id="turma" layoutX="53.0" layoutY="130.0" />
+      <Label layoutX="53.0" layoutY="107.0" text="Turma" />
+      <TextField fx:id="Problema" layoutX="53.0" layoutY="176.0" />
+      <Label layoutX="53.0" layoutY="155.0" text="Problema" />
    </children>
 </AnchorPane>

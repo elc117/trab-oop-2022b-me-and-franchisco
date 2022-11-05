@@ -7,14 +7,22 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class HelloController {
+
     @FXML
     private Label welcomeText;
     @FXML
-    private TextField txt1;
-    public void vai(Event event){
-        System.out.println(txt1.getText());
+    private TextField nome;
+    @FXML
+    private TextField Problema;
+
+    @FXML
+    private TextField turma;
+    public void catchInfos(Event event){
+        System.out.println(nome.getText());
+        System.out.println(turma.getText());
+        System.out.println(Problema.getText());
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText("Olá " + txt1.getText());
+        alert.setContentText("Olá " + nome.getText() + " " + "Turma: " + turma.getText() + " "  + "Apresenta: " + Problema.getText());
         alert.showAndWait();
 
     }
