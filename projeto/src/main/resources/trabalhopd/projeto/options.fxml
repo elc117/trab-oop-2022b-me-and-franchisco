@@ -8,17 +8,18 @@
         <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <items>
                 <Button fx:id="cancelbtn" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
-                <Button fx:id="okbtn" mnemonicParsing="false" onAction="#ok" text="Ok" />
+                <Button fx:id="okbtn" mnemonicParsing="false" text="Ok" />
             </items>
         </ToolBar>
     </bottom>
    <center>
       <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
          <children>
-            <CheckBox fx:id="q1" layoutX="28.0" layoutY="33.0" mnemonicParsing="false" onAction="#qst1" text="Dificuldade Para Prestar Atenção" />
-            <CheckBox fx:id="q2" layoutX="28.0" layoutY="62.0" mnemonicParsing="false" onAction="#qst2" text="A metodologia dificulda meu aprendizado" />
-            <CheckBox fx:id="q3" layoutX="28.0" layoutY="91.0" mnemonicParsing="false" onAction="#qst3" text="Dificuldade para compreender o conteúdo" />
-            <CheckBox fx:id="q4" layoutX="28.0" layoutY="117.0" mnemonicParsing="false" onAction="#qst4" text="Dificuldade para interpretar as atividades propostas" />
+            <CheckBox fx:id="q1" layoutX="28.0" layoutY="33.0" mnemonicParsing="false" onAction="#checkBox" text="Dificuldade Para Prestar Atenção" />
+            <CheckBox fx:id="q2" layoutX="28.0" layoutY="62.0" mnemonicParsing="false" text="A metodologia dificulda meu aprendizado" />
+            <CheckBox fx:id="q3" layoutX="28.0" layoutY="91.0" mnemonicParsing="false" text="Dificuldade para compreender o conteúdo" />
+            <CheckBox fx:id="q4" layoutX="28.0" layoutY="117.0" mnemonicParsing="false" text="Dificuldade para interpretar as atividades propostas" />
+            <Label fx:id="teste" layoutX="236.0" layoutY="33.0" />
          </children>
       </AnchorPane>
    </center>

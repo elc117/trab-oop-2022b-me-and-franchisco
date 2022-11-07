@@ -16,16 +16,26 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
+
         FXMLLoader fxmlData = new FXMLLoader(Main.class.getResource("data.fxml"));
-        //mainScene = new Scene(fxmlData.load(), 1366, 768);
+        mainScene = new Scene(fxmlData.load(), 1366, 768);
         FXMLLoader fxmlOptions = new FXMLLoader(Main.class.getResource("options.fxml"));
         optionsScene = new Scene(fxmlOptions.load(), 1366, 768);
-        Scene scene = new Scene(fxmlData.load(), 1366, 768);
         stage.setTitle("LoginPage");
-        stage.setScene(scene);
+        stage.setScene(mainScene);
         stage.show();
-    }
 
+    }
+    public static void changeScreen(String scr){
+        switch (scr){
+            case "main":
+                stage.setScene(mainScene);
+                break;
+            case "options":
+                stage.setScene(optionsScene);
+                break;
+        }
+    }
     public static void main(String[] args) {
         launch();
     }
