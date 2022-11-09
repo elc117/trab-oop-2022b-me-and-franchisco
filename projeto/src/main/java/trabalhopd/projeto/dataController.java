@@ -16,7 +16,7 @@ public class dataController {
 
 
     @FXML private TextField nome;
-    @FXML private TextField Problema;
+    @FXML private TextField Matricula;
     @FXML private TextField turma;
     @FXML public static Button NextPage;
 
@@ -24,11 +24,22 @@ public class dataController {
     public void catchInfos(Event event){
         System.out.println(nome.getText());
         System.out.println(turma.getText());
-        System.out.println(Problema.getText());
-        Alert alert = new Alert(Alert.AlertType.INFORMATION);
-        alert.setContentText("Olá " + nome.getText() + " " + "Turma: " + turma.getText() + " "  + "Apresenta: " + Problema.getText());
-        alert.showAndWait();
-
+        System.out.println(Matricula.getText());
+        if (Matricula.getText().isEmpty() || turma.getText().isEmpty() || nome.getText().isEmpty()) {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText("FAVOR NÃO DEIXAR CAMPO EM BRANCO, SUJEITO A PAULADA");
+            alert.showAndWait();
+        }
+        else if (!Matricula.getText().matches("[0-9]*")){
+            Alert alerta = new Alert(Alert.AlertType.INFORMATION);
+            alerta.setContentText("Matricula: Apenas numeros são aceitos");
+            alerta.showAndWait();
+        }
+        else {
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setContentText("Olá " + nome.getText() + "\n" + "Turma: " + turma.getText() + "\n" + "Matricula: " + Matricula.getText());
+            alert.showAndWait();
+        }
     }
 
     public void NextPage(){

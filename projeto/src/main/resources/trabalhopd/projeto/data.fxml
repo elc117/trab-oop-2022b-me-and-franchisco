@@ -10,8 +10,8 @@
       <Label layoutX="53.0" layoutY="37.0" text="Nome" />
       <TextField fx:id="turma" layoutX="53.0" layoutY="108.0" />
       <Label layoutX="53.0" layoutY="85.0" text="Turma" />
-      <TextField fx:id="Problema" layoutX="53.0" layoutY="154.0" />
-      <Label layoutX="53.0" layoutY="133.0" text="Problema" />
+      <TextField fx:id="Matricula" layoutX="53.0" layoutY="154.0" />
+      <Label layoutX="53.0" layoutY="133.0" prefHeight="17.0" prefWidth="59.0" text="Matricula" />
       <Button layoutX="840.0" layoutY="516.0" mnemonicParsing="false" onAction="#Exit" text="Exit" />
       <Button fx:id="NextPage" layoutX="128.0" layoutY="189.0" mnemonicParsing="false" onAction="#NextPage" text="NextPage" />
    </children>

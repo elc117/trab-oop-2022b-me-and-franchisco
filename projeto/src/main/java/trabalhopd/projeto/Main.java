@@ -20,20 +20,6 @@ public class Main extends Application {
     private static Scene optionsScene;
     private static int t;
 
-    /*public Scene createContent_1(){
-        // Conteúdo I
-        FXMLLoader fxmlData = new FXMLLoader(Main.class.getResource("data.fxml"));
-        mainScene = new Scene(fxmlData.load(), 1366, 768);
-        return mainScene;
-    }
-
-    public Scene createContent_2() throws IOException {
-
-        // Conteúdo II
-        FXMLLoader fxmlOptions = new FXMLLoader(Main.class.getResource("options.fxml"));
-        optionsScene = new Scene(fxmlOptions.load(), 1366, 768);
-        return optionsScene;
-    }*/
     @Override
     public void start(Stage stage) throws Exception{
 
