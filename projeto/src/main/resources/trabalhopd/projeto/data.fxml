@@ -5,12 +5,14 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalhopd.projeto.dataController">
    <children>
-      <Button layoutX="53.0" layoutY="189.0" mnemonicParsing="false" onAction="#catchInfos" text="Button" />
+      <Button fx:id="PrintInfo" layoutX="53.0" layoutY="189.0" mnemonicParsing="false" onAction="#catchInfos" text="Print Info" />
       <TextField fx:id="nome" layoutX="53.0" layoutY="54.0" />
       <Label layoutX="53.0" layoutY="37.0" text="Nome" />
       <TextField fx:id="turma" layoutX="53.0" layoutY="108.0" />
       <Label layoutX="53.0" layoutY="85.0" text="Turma" />
       <TextField fx:id="Problema" layoutX="53.0" layoutY="154.0" />
       <Label layoutX="53.0" layoutY="133.0" text="Problema" />
+      <Button layoutX="840.0" layoutY="516.0" mnemonicParsing="false" onAction="#Exit" text="Exit" />
+      <Button fx:id="NextPage" layoutX="128.0" layoutY="189.0" mnemonicParsing="false" onAction="#NextPage" text="NextPage" />
    </children>
 </AnchorPane>
