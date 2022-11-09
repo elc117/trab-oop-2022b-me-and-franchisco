@@ -26,9 +26,9 @@ public class Main extends Application {
         WINDOWS = stage;
 
         FXMLLoader fxmlData = new FXMLLoader(Main.class.getResource("data.fxml"));
-        mainScene = new Scene(fxmlData.load(), 1366, 768);
+        mainScene = new Scene(fxmlData.load(), 800, 600);
         FXMLLoader fxmlOptions = new FXMLLoader(Main.class.getResource("options.fxml"));
-        optionsScene = new Scene(fxmlOptions.load(), 1366, 768);
+        optionsScene = new Scene(fxmlOptions.load(), 800, 600);
 
         WINDOWS.setScene(mainScene);
 

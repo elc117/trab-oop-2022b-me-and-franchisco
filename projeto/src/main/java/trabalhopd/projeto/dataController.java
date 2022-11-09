@@ -19,6 +19,7 @@ public class dataController {
     @FXML private TextField Matricula;
     @FXML private TextField turma;
     @FXML public static Button NextPage;
+    @FXML private Button okbtn;
 
 
     public void catchInfos(Event event){
