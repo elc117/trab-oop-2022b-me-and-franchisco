@@ -38,7 +38,8 @@ public class dataController {
         }
         else {
             Alert alert = new Alert(Alert.AlertType.INFORMATION);
-            alert.setContentText("Olá " + nome.getText() + "\n" + "Turma: " + turma.getText() + "\n" + "Matricula: " + Matricula.getText());
+            alert.setContentText("Olá " + nome.getText() + "\n" + "Turma: " + turma.getText() + "\n" + "Matricula: " + Matricula.getText() + "\n" + "Você foi cadastrado com sucesso!");
+            Aluno alunool = new Aluno(nome.getText(), turma.getText(), Matricula.getText());
             alert.showAndWait();
         }
     }

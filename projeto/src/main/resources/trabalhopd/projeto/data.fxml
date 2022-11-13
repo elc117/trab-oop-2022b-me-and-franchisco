@@ -5,7 +5,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="895.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalhopd.projeto.dataController">
    <children>
-      <Button fx:id="PrintInfo" layoutX="53.0" layoutY="189.0" mnemonicParsing="false" onAction="#catchInfos" text="Print Info" />
+      <Button fx:id="PrintInfo" layoutX="53.0" layoutY="189.0" mnemonicParsing="false" onAction="#catchInfos" text="Upload Info" />
       <TextField fx:id="nome" layoutX="53.0" layoutY="54.0" />
       <Label layoutX="53.0" layoutY="37.0" text="Nome" />
       <TextField fx:id="turma" layoutX="53.0" layoutY="108.0" />

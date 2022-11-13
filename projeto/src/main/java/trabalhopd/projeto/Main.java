@@ -18,6 +18,7 @@ public class Main extends Application {
     private static Scene mainScene;
     public static Stage WINDOWS;
     private static Scene optionsScene;
+    private static Scene relatoryScene;
     private static int t;
 
     @Override
@@ -29,6 +30,8 @@ public class Main extends Application {
         mainScene = new Scene(fxmlData.load(), 800, 600);
         FXMLLoader fxmlOptions = new FXMLLoader(Main.class.getResource("options.fxml"));
         optionsScene = new Scene(fxmlOptions.load(), 800, 600);
+        FXMLLoader fxmlRelatory = new FXMLLoader(Main.class.getResource("relatorio.fxml"));
+        relatoryScene = new Scene(fxmlRelatory.load(), 800, 600);
 
         WINDOWS.setScene(mainScene);
 
@@ -45,9 +48,13 @@ public class Main extends Application {
                 break;
             case 2:
                 WINDOWS.setScene(optionsScene);
-                WINDOWS.setTitle("Tela Principal");
+                WINDOWS.setTitle("Menu de Seleção");
                 WINDOWS.show();
                 break;
+            case 3:
+                WINDOWS.setScene((relatoryScene));
+                WINDOWS.setTitle("Relatory");
+                WINDOWS.show();
         }
     }
     public static void main(String[] args) {
