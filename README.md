@@ -12,3 +12,13 @@ Indentificaram-se dificulades no ambiente escolar a partir de relatos pessoais c
 Para tanto, desenvolveu-se um sistema para coletar/ouvir problemas identificados por alunos em sala de aula, o mesmo gera uma "pontuação" para identificar os alunos que mais apresentam dificuldades para adaptar-se ao ambiente escolar. Dessa forma, auxilia-se a atuação docente na escolha e material didático e metodologias que podem ser propostas em sala de aula, visando proporcionar um ambiente acolhedor e seguro para todos os discentes.
 
 ## Desenvolvimento:
+
+### Frameworks e linguagem utilizada:
+
+ - Java
+    - JavaFX
+#### Java: Utilizamos java para construir o corpo do nosso projeto, por exemplo, construção de classes, objetos e contrutores.
+
+#### JavaFX: JavaFX foi utilizado para simplificar a construção do frontend da nossa aplicação, visto que não possuiamos experiencia com a programação de aplicações com interfaces interativas.
+
+## Do Software:
