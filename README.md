@@ -22,3 +22,24 @@ Para tanto, desenvolveu-se um sistema para coletar/ouvir problemas identificados
 #### JavaFX: JavaFX foi utilizado para simplificar a construção do frontend da nossa aplicação, visto que não possuiamos experiencia com a programação de aplicações com interfaces interativas.
 
 ## Do Software:
+#### Tela inicial: Solicitamos ao usuário informações básicas para seguirmos com o processo: Nome, Turma e Matrícula
+
+<img src="https://user-images.githubusercontent.com/74078237/201671711-f055b448-c136-40bb-8060-04452b97395c.png" width="400" height="300">
+
+Ao clicar em **Upload info**, acionamos o identificador no FXML chamado OnAction, que ativa a seguinte função:
+
+<img src="https://user-images.githubusercontent.com/74078237/201674257-de7572fb-3da6-4c9e-a28b-6ac5012d71ab.png" width="768" height="350" >
+
+O campo matrícula está configurado para aceitar apenas valores númericos, caso o usuário não insira corretamente o solicitado, surge uma janela de Alerta, informando que apenas números são aceitos.
+
+![image](https://user-images.githubusercontent.com/74078237/201673743-c76eb0cd-4933-4e36-98ac-d14f178c854c.png)
+
+Caso o usuário mantenha os campos em branco, a seguinte janela de Alerta é exibida:
+
+<img src="https://user-images.githubusercontent.com/74078237/201674439-8713f22f-1356-4626-8ae6-4018254e15c7.png" width="300" height="200">
+
+Em caso de sucesso, informamos o usuário que as informações foram cadastradas e exibimos os itens inseridos em uma janela de alerta:
+
+<img src="https://user-images.githubusercontent.com/74078237/201674632-028daf51-d2fa-41d1-a390-919ad77cf69b.png" width="300" height="200">
+
+
