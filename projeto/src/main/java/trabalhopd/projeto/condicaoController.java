@@ -58,7 +58,7 @@ public class condicaoController {
         root = fxmlOptions.load();
         relatorioController relatrioctl = fxmlOptions.getController();
         relatrioctl.pontuation(turmas);
-        NextScene = new Scene(root, 800, 600);
+        NextScene = new Scene(root, 600, 400);
         WINDOWS.setScene(NextScene);
         WINDOWS.setTitle("Relatory");
         WINDOWS.show();
