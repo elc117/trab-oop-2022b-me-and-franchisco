@@ -9,9 +9,24 @@ public class Turma {
     public Turma(String turma, int qalunos){
         this.turma = turma;
         this.qalunos = qalunos;
+        this.aluno = new ArrayList<Aluno>();
     }
 
-    public static void turmaAdd(String turmaa, int qalunoss){
+    public void addAluno(Aluno a) {
+        this.aluno.add(a);
+        qalunos++;
+    }
+
+    public String getturma(){
+        return this.turma;
+    }
+
+    public ArrayList<Aluno> getAlunos() {
+        return aluno;
+    }
+
+    public void turmaAdd(String turmaa, int qalunoss){
+
         Turma turma = new Turma(turmaa, qalunoss);
     }
 }

@@ -1,25 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalhopd.projeto.optionsController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalhopd.projeto.optionsController">
     <bottom>
         <ToolBar nodeOrientation="RIGHT_TO_LEFT" prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
             <items>
                 <Button fx:id="cancelbtn" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
-                <Button fx:id="okbtn" mnemonicParsing="false" onAction="#NextPage" text="Ok" />
+                <Button fx:id="okbtn" mnemonicParsing="false" onAction="#checkpoints" text="Ok" />
             </items>
         </ToolBar>
     </bottom>
-   <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
-         <children>
-            <CheckBox fx:id="q1" layoutX="28.0" layoutY="33.0" mnemonicParsing="false" onAction="#checkBox" text="Dificuldade Para Prestar Atenção" />
-            <CheckBox fx:id="q2" layoutX="28.0" layoutY="62.0" mnemonicParsing="false" text="A metodologia dificulda meu aprendizado" />
-            <CheckBox fx:id="q3" layoutX="28.0" layoutY="91.0" mnemonicParsing="false" text="Dificuldade para compreender o conteúdo" />
-            <CheckBox fx:id="q4" layoutX="28.0" layoutY="117.0" mnemonicParsing="false" text="Dificuldade para interpretar as atividades propostas" />
-         </children>
-      </AnchorPane>
-   </center>
+    <center>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <CheckBox fx:id="q1" layoutX="154.0" layoutY="42.0" mnemonicParsing="false" onAction="#checkBox1" text="Dificuldade Para Prestar Atenção" />
+                <CheckBox fx:id="q11" layoutX="154.0" layoutY="65.0" mnemonicParsing="false" onAction="#checkBox1" text="A metodologia dificulda meu aprendizado" />
+                <CheckBox fx:id="q111" layoutX="153.0" layoutY="92.0" mnemonicParsing="false" onAction="#checkBox1" text="Dificuldade para compreender o conteúdo" />
+                <CheckBox fx:id="q1111" layoutX="153.0" layoutY="118.0" mnemonicParsing="false" onAction="#checkBox1" text="Dificuldade para interpretar as atividades propostas" />
+                <Label fx:id="teste" layoutX="36.0" layoutY="25.0" text="5" />
+                <CheckBox fx:id="q2" layoutX="122.0" layoutY="42.0" mnemonicParsing="false" onAction="#checkBox2" />
+                <CheckBox fx:id="q12" layoutX="122.0" layoutY="65.0" mnemonicParsing="false" onAction="#checkBox2" />
+                <CheckBox fx:id="q112" layoutX="122.0" layoutY="92.0" mnemonicParsing="false" onAction="#checkBox2" />
+                <CheckBox fx:id="q1112" layoutX="122.0" layoutY="118.0" mnemonicParsing="false" onAction="#checkBox2" />
+                <CheckBox fx:id="q3" layoutX="91.0" layoutY="42.0" mnemonicParsing="false" onAction="#checkBox3" />
+                <CheckBox fx:id="q13" layoutX="91.0" layoutY="65.0" mnemonicParsing="false" onAction="#checkBox3" />
+                <CheckBox fx:id="q113" layoutX="91.0" layoutY="92.0" mnemonicParsing="false" onAction="#checkBox3" />
+                <CheckBox fx:id="q1113" layoutX="91.0" layoutY="118.0" mnemonicParsing="false" onAction="#checkBox3" />
+                <CheckBox fx:id="q4" layoutX="62.0" layoutY="42.0" mnemonicParsing="false" onAction="#checkBox4" />
+                <CheckBox fx:id="q14" layoutX="62.0" layoutY="65.0" mnemonicParsing="false" onAction="#checkBox4" />
+                <CheckBox fx:id="q114" layoutX="62.0" layoutY="92.0" mnemonicParsing="false" onAction="#checkBox4" />
+                <CheckBox fx:id="q1114" layoutX="62.0" layoutY="118.0" mnemonicParsing="false" onAction="#checkBox4" />
+                <CheckBox fx:id="q5" layoutX="31.0" layoutY="42.0" mnemonicParsing="false" onAction="#checkBox5" />
+                <CheckBox fx:id="q15" layoutX="31.0" layoutY="65.0" mnemonicParsing="false" onAction="#checkBox5" />
+                <CheckBox fx:id="q115" layoutX="31.0" layoutY="92.0" mnemonicParsing="false" onAction="#checkBox5" />
+                <CheckBox fx:id="q1115" layoutX="31.0" layoutY="118.0" mnemonicParsing="false" onAction="#checkBox5" />
+                <Label fx:id="teste1" layoutX="67.0" layoutY="25.0" text="4" />
+                <Label fx:id="teste2" layoutX="96.0" layoutY="25.0" text="3" />
+                <Label fx:id="teste3" layoutX="127.0" layoutY="25.0" text="2" />
+                <Label fx:id="teste4" layoutX="160.0" layoutY="25.0" text="1" />
+            </children>
+        </AnchorPane>
+    </center>
 </BorderPane>

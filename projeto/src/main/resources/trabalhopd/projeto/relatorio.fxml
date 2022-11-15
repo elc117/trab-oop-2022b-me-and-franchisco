@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="768.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalhopd.projeto.relatorioController">
+<AnchorPane fx:id="points" prefHeight="768.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalhopd.projeto.relatorioController">
    <children>
-      <TreeView layoutX="54.0" layoutY="61.0" prefHeight="426.0" prefWidth="319.0" />
-      <Label layoutX="75.0" layoutY="78.0" text="Pontuação:" fx:id="point1"/>
-      <Button layoutX="751.0" layoutY="729.0" mnemonicParsing="false" text="Exit" onAction="#cancel"/>
+      <TreeView fx:id="treeview" layoutX="63.0" layoutY="95.0" prefHeight="426.0" prefWidth="319.0" />
+      <Button layoutX="751.0" layoutY="729.0" mnemonicParsing="false" onAction="#cancel" text="Exit" />
+      <Button layoutX="453.0" layoutY="230.0" mnemonicParsing="false" onAction="#loads" text="Load" />
    </children>
 </AnchorPane>

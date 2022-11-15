@@ -2,14 +2,9 @@ package trabalhopd.projeto;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
 import javafx.stage.Stage;
-
-import java.io.IOException;
-import java.security.cert.PolicyNode;
-import java.util.Objects;
+import javafx.scene.Parent;
 
 public class Main extends Application {
 
@@ -17,8 +12,7 @@ public class Main extends Application {
 
     private static Scene mainScene;
     public static Stage WINDOWS;
-    private static Scene optionsScene;
-    private static Scene relatoryScene;
+
     private static int t;
 
     @Override
@@ -28,10 +22,6 @@ public class Main extends Application {
 
         FXMLLoader fxmlData = new FXMLLoader(Main.class.getResource("data.fxml"));
         mainScene = new Scene(fxmlData.load(), 800, 600);
-        FXMLLoader fxmlOptions = new FXMLLoader(Main.class.getResource("options.fxml"));
-        optionsScene = new Scene(fxmlOptions.load(), 800, 600);
-        FXMLLoader fxmlRelatory = new FXMLLoader(Main.class.getResource("relatorio.fxml"));
-        relatoryScene = new Scene(fxmlRelatory.load(), 800, 600);
 
         WINDOWS.setScene(mainScene);
 
@@ -39,25 +29,18 @@ public class Main extends Application {
 
         WINDOWS.show();
     }
-    public static void change(int str){
-        switch (str){
-            case 1:
-                WINDOWS.setScene(mainScene);
-                WINDOWS.setTitle("Tela Principal");
-                WINDOWS.show();
-                break;
-            case 2:
-                WINDOWS.setScene(optionsScene);
-                WINDOWS.setTitle("Menu de Seleção");
-                WINDOWS.show();
-                break;
-            case 3:
-                WINDOWS.setScene((relatoryScene));
-                WINDOWS.setTitle("Relatory");
-                WINDOWS.show();
-        }
-    }
     public static void main(String[] args) {
         launch();
     }
 }
+/*
+*
+*  module trabalhopd.projeto {
+    requires javafx.controls;
+    requires javafx.fxml;
+
+
+    opens trabalhopd.projeto to javafx.fxml;
+    exports trabalhopd.projeto;
+}
+* */

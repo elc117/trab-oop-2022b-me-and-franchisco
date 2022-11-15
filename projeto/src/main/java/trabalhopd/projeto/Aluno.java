@@ -7,13 +7,24 @@ public class Aluno {
     public int pontuacao;
 
     public Aluno(String name, String turma, String matricula){
-        name = name;
-        turma = turma;
-        matricula = matricula;
+        this.name = name;
+        this.turma = turma;
+        this.matricula = matricula;
         System.out.println(name);
     }
-    public Aluno(int pontuacao){
-        pontuacao = pontuacao;
+    public void setpontuacao(int pontuacao){
+        this.pontuacao = pontuacao;
     }
 
+    public int getpontuacao(){
+        return this.pontuacao;
+    }
+
+    public String getturma(){
+        return this.turma;
+    }
+
+    public String getName(){
+        return this.name;
+    }
 }

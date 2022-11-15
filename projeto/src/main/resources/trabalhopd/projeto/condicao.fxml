@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="trabalhopd.projeto.condicaoController">
+   <children>
+      <Button layoutX="60.0" layoutY="310.0" mnemonicParsing="false" onAction="#StartPage" prefHeight="49.0" prefWidth="146.0" text="Adicionar" />
+      <Button layoutX="392.0" layoutY="310.0" mnemonicParsing="false" onAction="#NextPage" prefHeight="49.0" prefWidth="146.0" text="Gerar" />
+      <Label layoutX="58.0" layoutY="29.0" text="Gerar relatório ou adicionar mais um aluno?">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
